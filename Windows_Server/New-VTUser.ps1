@@ -23,7 +23,7 @@ function New-VTUser {
 
     $login = ($Prenom.Substring(0,1) + $Nom).ToLower()
     $ouPath = "OU=Utilisateurs,OU=$Departement,$baseOU"
-    $motDePasse = ConvertTo-SecureString "Vitaltech@2026!" -AsPlainText -Force
+    $motDePasse = ConvertTo-SecureString "<TempPassword>" -AsPlainText -Force
 
     New-ADUser `
         -GivenName       $Prenom `
