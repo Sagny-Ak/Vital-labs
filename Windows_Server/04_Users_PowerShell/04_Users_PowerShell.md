@@ -23,7 +23,7 @@ New-ADUser `
   -SamAccountName "tstark" `
   -UserPrincipalName "tstark@vitaltech.local" `
   -Path "OU=Utilisateurs,OU=Informatique,OU=vitalTech-Company,DC=vitaltech,DC=local" `
-  -AccountPassword (ConvertTo-SecureString "Vitaltech@2026!" -AsPlainText -Force) `
+  -AccountPassword (ConvertTo-SecureString "<TempPassword>" -AsPlainText -Force) `
   -Enabled $true
 ```
 
